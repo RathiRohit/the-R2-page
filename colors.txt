@@ -1,0 +1,13 @@
+left panel : #003333
+left panel font : #bfbfbf
+left panel hr breaks : #737373
+
+right pane : #e6e6e6
+custom palets : #f2f2f2
+
+
+ubuntu terminal:
+  background: #300a24;
+  username text: #8ae234;
+  tidle: #729fcf;
+  normal text: #ffffff;

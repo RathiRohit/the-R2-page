@@ -1,0 +1,173 @@
+/*ubuntu terminal*/
+@font-face {
+	font-family: UbuntuTerminalBold;
+	src: url(/fonts/UbuntuTerminal-Bold.ttf);
+}
+
+@font-face {
+	font-family: UbuntuTerminal;
+	src: url(/fonts/UbuntuTerminal-Regular.ttf);
+}
+
+.terminalVisible
+{
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 2s linear;
+}
+
+.terminalHidden
+{
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.nopadding {
+	padding: 0;
+	margin: 0;
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bottom-border {
+	border-bottom: 2px solid #737373;
+}
+
+.top-border {
+	border-bottom: 2px solid #737373;
+}
+
+.top-border-faint {
+	border-bottom: 2px solid #e6e6e6;
+}
+
+.titilliumText25L-font {
+	font-family: TitilliumText25L;
+}
+
+.custom-palets {
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+}
+.custom-palets:hover {
+	background-color: #f2f2f2;
+}
+
+.custom-small-top-margin {
+	margin-top: 10px;
+}
+
+.custom-small-height{
+	height: 10px;
+}
+
+.custom-top-bar {
+	background-color: #ffffff;
+	z-index:9999;
+	position: fixed;
+	top:0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-footer {
+	position: fixed;
+	bottom: 20px;
+	z-index:9999;
+}
+
+.custom-btn {
+	cursor: pointer;
+}
+
+.custom-clickable-icon {
+	cursor: pointer;
+	color: #bfbfbf;
+}
+.custom-clickable-icon:hover {
+	color: #ffffff;
+}
+
+.custom-page {
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	 background-color:#e6e6e6;
+}
+
+.custom-credits-palet {
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-link-no-makeup {
+	text-decoration: none;
+	cursor: pointer;
+}
+.custom-link-no-makeup:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.custom-link-no-makeup-black {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000000;
+}
+.custom-link-no-makeup-black:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000000;
+}
+
+.blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #cccccc;
+  margin: 0 10px;
+  padding: 0.5em 20px;
+}
+
+.blockquote-reverse {
+  background: #f9f9f9;
+  text-align: right;
+  border-left: none;
+  border-right: 10px solid #cccccc;
+  margin: 0 10px;
+  padding: 0.5em 20px;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.custom-rounded-right {
+	border-radius: 0 20% 20% 0;
+}
+
+.custom-rounded-left {
+	border-radius: 20% 0 0 20%;
+}
+
+.custom-project-palet {
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+	opacity: 1;
+}
+.custom-project-palet:hover {
+	background-color: #f2f2f2;
+	opacity: 0.8;
+}
+
+.custom-about-palet {
+	border-top: 15px solid #737373;
+}
+
+.custom-edu-palet {
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
