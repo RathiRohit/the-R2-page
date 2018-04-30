@@ -41,12 +41,40 @@ function changePageTo(pageName) {
 	});
 }
 
+/*Ratings*/
+$(document).ready(function() { getRatings();});
+
+function getRatings() {}
+
 /*ubuntu terminal*/
 var globe = this;
 var terminalSpd = 500;
 var compCom = '';
+var terminalShowing = true;
 
-$(document).ready(function() { changeTerminal(0,); });
+$(document).ready(function() {
+    var ctrlDown = false,
+        ctrlKey = 17,
+        cmdKey = 91,
+        cKey = 67;
+
+    $(document).keydown(function(e) {
+        if (terminalShowing && (e.keyCode==ctrlKey || e.keyCode==cmdKey)) ctrlDown = true;
+    }).keyup(function(e) {
+        if (terminalShowing && (e.keyCode==ctrlKey || e.keyCode==cmdKey)) ctrlDown = false;
+    });
+
+    $(document).keydown(function(e) {
+        if (ctrlDown && terminalShowing && e.keyCode==cKey)
+        {
+            document.getElementById("terminal").className = "terminalHidden";
+            terminalShowing = false;
+            return false;
+        }
+    });
+});
+
+$(document).ready(function() { changeTerminal(0,);});
 
 function getRandomInt(min, max) {
   return min+Math.floor(Math.random() * Math.floor(max-min));
@@ -296,6 +324,7 @@ function changeTerminal(step) {
     case 48:
       term.innerHTML = globe.compCom + '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ starting TheR²Page-GUI (get ready for some awesome stuff)...</span>';
       term.className = "terminalHidden";
+      terminalShowing = false;
       break;
   }
 }
