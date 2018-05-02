@@ -82,7 +82,7 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() { changeTerminal(0,);});
+$(document).ready(function() { changeTerminal(0);});
 
 function getRandomInt(min, max) {
   return min+Math.floor(Math.random() * Math.floor(max-min));

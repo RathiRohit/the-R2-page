@@ -185,3 +185,7 @@ blockquote p {
     -moz-background-clip: text;
 	background-clip: text;
 }
+
+.custom-bold-black {
+	color: #000000;
+}
