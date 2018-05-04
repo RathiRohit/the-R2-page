@@ -1,7 +1,7 @@
 var curPage = "Dashboard";
 
 $(document).on("keydown", function (e) {
-    if (e.which === 8 && !$(e.target).is("input, textarea")) {
+    if ((e.which === 8 && !$(e.target).is("input, textarea")) || (e.which === 27)) {
         e.preventDefault();
 		if(curPage != "Dashboard")
 			changePageTo("Dashboard");
