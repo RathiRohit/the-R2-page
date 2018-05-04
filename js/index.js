@@ -47,6 +47,23 @@ function changePageTo(pageName) {
 				document.getElementById("backArrow").style.display = "none";
 		});
 	});
+
+    if(pageName == "Skills") {
+        document.getElementById('Skills1').innerHTML = "";
+        document.getElementById('Skills2').innerHTML = "";
+        var options1 = {
+          strings: ["C++ &#8226; C &#8226; Java &#8226; Python<br>JavaScript &#8226; HTML &#8226; CSS<hr/>Algorithms &#8226; Data Structures &#8226; DBMS<br><br>"],
+          typeSpeed: 60,
+          showCursor: false
+        }
+        var typed1 = new Typed("#Skills1", options1);
+        var options2 = {
+          strings: ["DJango Web Framework &#8226; Bootstrap<br>JavaFX &#8226; Unity3D<hr/>Competitive Coding &#8226; Image Processing<br>Software &amp; Web Development"],
+          typeSpeed: 60,
+          showCursor: false
+        }
+        var typed2 = new Typed("#Skills2", options2);
+    }
 }
 
 /*Ratings*/
@@ -352,7 +369,7 @@ function changeTerminal(step) {
       break;
     case 101:
       globe.compCom = term.innerHTML;
-      term.innerHTML = globe.compCom + '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ <span style="font-family:UbuntuTerminalBold; color:#ff0000;">UnsupportedDeviceError: [Error 7] Small screen devices can not handle the awesomness of \'TheR²Page\', please switch to a device with larger screen to enjoy the ride</span>';
+      term.innerHTML = globe.compCom + '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ <span style="font-family:UbuntuTerminalBold; color:#ff0000;">UnsupportedDeviceError: [Error 7] Small screen devices can not handle the awesomness of \'TheR²Page\', please switch to a device with larger screen to enjoy the ride</span><br><br><br>';
       break;
   }
 }
