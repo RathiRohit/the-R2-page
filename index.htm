@@ -8,10 +8,12 @@
 		<link id="fontAwesomeCSS" rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/perfect-scrollbar.css">
+		<link rel="stylesheet" href="css/baguetteBox.min.css">
 
 		<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 		<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
 		<script src="js/perfect-scrollbar.min.js" type="text/javascript"></script>
+		<script src="js/baguetteBox.min.js"></script>
 
 		<link id="cusCSS" rel="stylesheet" type="text/css" href="css/index.css" />
 		<script src="js/index.js" type="text/javascript"></script>
@@ -500,6 +502,33 @@
 									</div>
 								</div>
 							</div>
+							<br><br><br>
+							<div class="col-md-10 offset-md-1">
+								<table class="col-md-12" border="1">
+									<tr>
+										<td colspan="2" width="100%">
+											<div style="height:100px"></div>
+										</td>
+									</tr>
+									<tr>
+										<td width="50%">
+											<div style="height:200px"></div>
+										</td>
+										<td width="50%">
+											<div style="height:200px"></div>
+										</td>
+									</tr>
+									<tr>
+										<td width="50%">
+											<div style="height:200px"></div>
+										</td>
+										<td width="50%">
+											<div style="height:200px"></div>
+										</td>
+									</tr>
+								</table>
+								<br><br><br>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -508,7 +537,7 @@
 					<br>
 					<div class="row col-md-12 nopadding">
 						<div class="col-md-4">
-							<div class="card col-md-12 custom-edu-palet">
+							<div class="card col-md-12 custom-edu-palet" onclick="viewCert('sscCert')">
 								<img class="card-img-top" src="images/education/secondary.png" alt="Secondary">
 								<div class="card-body">
 							  		<h5 class="card-title text-center">Secondary</h5>
@@ -526,7 +555,7 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="card col-md-12 custom-edu-palet">
+							<div class="card col-md-12 custom-edu-palet" onclick="viewCert('hscCert')">
 								<img class="card-img-top" src="images/education/higherSecondary.png" alt="Higher Secondary">
 								<div class="card-body">
 							  		<h5 class="card-title text-center">Higher Secondary</h5>
@@ -544,7 +573,7 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="card col-md-12 custom-edu-palet">
+							<div class="card col-md-12 custom-edu-palet" onclick="viewCert('gradCert')">
 								<img class="card-img-top" src="images/education/graduation.png" alt="Graduation">
 								<div class="card-body">
 							  		<h5 class="card-title text-center">Graduation</h5>
@@ -578,14 +607,14 @@
 					<br><br>
 					<div class="col-md-12">
 						<div class="col-md-12 row nomargin">
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement" onclick="viewCert('acmicpc17Cert');">
 								<div class="col-md-12">
 									<h5><strong>ACM ICPC 2017 - Asia Chennai Regionals</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
 									<h6 style="color:#595959;">Secured <b class="custom-bold-black">49th rank</b> in ACM ICPC 17 Asia chennai regionals, 2<sup>nd</sup> round of ACM ICPC, also known as "Olympics of Programming"</h6>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement">
 								<div class="col-md-12">
 									<h5><strong>Smart India Hackathon 18</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
@@ -595,14 +624,14 @@
 						</div>
 						<br><div style="height:10px;"></div>
 						<div class="col-md-12 row nomargin">
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement">
 								<div class="col-md-12">
 									<h5><strong>EYantra Robotics Competition - IITBombay</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
 									<h6 style="color:#595959;">Secured <b class="custom-bold-black">3<sup>rd</sup> rank</b> in eYRC-2017, an annual robotics competiton organized by IITBombay</h6>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement" onclick="viewCert('mindspark17Cert');">
 								<div class="col-md-12">
 									<h5><strong>COEP MindSpark17 - CodeJunkie++ </strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
@@ -612,16 +641,16 @@
 						</div>
 						<br><div style="height:10px;"></div>
 						<div class="col-md-12 row nomargin">
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement" onclick="viewCert('techumen17Cert');">
 								<div class="col-md-12">
 									<h5><strong>ACSES Techumen17 - CodeWizard</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
 									<h6 style="color:#595959;"><b class="custom-bold-black">Winner</b> of CodeWizard(Expert), a programming competition organized by ACSES at WCE, Sangli in 2017</h6>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement" onclick="viewCert('techvyom17Cert');">
 								<div class="col-md-12">
-									<h5><strong>SAIT - CodeNigma</strong></h5>
+									<h5><strong>SAIT Techvyom17 - CodeNigma</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
 									<h6 style="color:#595959;"><b class="custom-bold-black">Winner</b> of CodeNigma(Novice), a programming competition organized by SAIT at WCE, Sangli in 2017</h6>
 								</div>
@@ -629,14 +658,14 @@
 						</div>
 						<br><div style="height:10px;"></div>
 						<div class="col-md-12 row nomargin">
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement" onclick="viewCert('aavishkar17Cert');">
 								<div class="col-md-12">
-									<h5><strong>Aakaar17 - CodeTrix</strong></h5>
+									<h5><strong>Aavishkar17 - CodeTrix</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
 									<h6 style="color:#595959;"><b class="custom-bold-black">Winner</b> of CodeTrix(Novice), a programming competition organized by Govt. College of Engineering, Karad in 2017</h6>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement" onclick="viewCert('vision17Cert');">
 								<div class="col-md-12">
 									<h5><strong>WCE Vision'17 - CodeGeeks</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
@@ -646,14 +675,14 @@
 						</div>
 						<br><div style="height:10px;"></div>
 						<div class="col-md-12 row nomargin">
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement" onclick="viewCert('infinity17Cert');">
 								<div class="col-md-12">
 									<h5><strong>WCE ACM Infinity'17 - Algolympics</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
 									<h6 style="color:#595959;"><b class="custom-bold-black">Runner-up</b> in Algolympics, a programming competition organized by ACM Student Chapter at WCE, Sangli in 2017</h6>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement" onclick="viewCert('techumen16Cert');">
 								<div class="col-md-12">
 									<h5><strong>ACSES Techumen16 - Game of Codes</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
@@ -663,14 +692,14 @@
 						</div>
 						<br><div style="height:10px;"></div>
 						<div class="col-md-12 row nomargin">
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement">
 								<div class="col-md-12">
 									<h5><strong>SAIT TechNex18 - CodeCrush</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
 									<h6 style="color:#595959;"><b class="custom-bold-black">Runner-up</b> in CodeCrush(Expert), a programming competition organized by SAIT at WCE, Sangli in 2018</h6>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 custom-achievement">
 								<div class="col-md-12">
 									<h5><strong>MUSE Hackathon - HUL</strong></h5>
 									<div style="height:10px; border-top:1px solid #737373;"></div>
@@ -688,5 +717,26 @@
 				<button type="button" class="custom-btn btn btn-light btn-lg" onclick="changePageTo('Credits');"><i class="fa fa-info-circle"></i></button>
 			</div>
 		</div>
+		<!--pageCertificates-->
+		<div class="col-md-12 nopadding" style="display:none" id="pageCertificates">
+			<div style="display:none;" class="gallery">
+			    <a href="images/certificates/ssc.jpg" data-caption="Secondary School Certificate" id="sscCert"></a>
+				<a href="images/certificates/hsc.jpg" data-caption="Higher Secondary Certificate" id="hscCert"></a>
+				<a href="images/certificates/graduation.jpg" data-caption="Graduation BTech-CSE" id="gradCert"></a>
+				<a href="images/certificates/acmicpc17.png" data-caption="ACM ICPC 17 - Asia Chennai Regionals" id="acmicpc17Cert"></a>
+				<a href="images/certificates/mindspark17.jpg" data-caption="COEP MindSpark'17 - CodeJunkie++" id="mindspark17Cert"></a>
+				<a href="images/certificates/techumen17.jpg" data-caption="ACSES Techumen'17 - CodeWizard" id="techumen17Cert"></a>
+				<a href="images/certificates/techvyom17.jpg" data-caption="SAIT Techvyom'17 - CodeNigma" id="techvyom17Cert"></a>
+				<a href="images/certificates/aavishkar17.jpg" data-caption="Aavishkar'17 - CodeTrix" id="aavishkar17Cert"></a>
+				<a href="images/certificates/vision17.jpg" data-caption="Vision'17 - CodeGeeks" id="vision17Cert"></a>
+				<a href="images/certificates/infinity17.jpg" data-caption="WCE ACM Infinity'17 - Algolympics" id="infinity17Cert"></a>
+				<a href="images/certificates/techumen16.jpg" data-caption="ACSES Techumen'16 - Game of Codes" id="techumen16Cert"></a>
+			</div>
+		</div>
+		<script>
+		var gallery = baguetteBox.run('.gallery', {
+			fullScreen: true
+		});
+		</script>
 	</body>
 </html>

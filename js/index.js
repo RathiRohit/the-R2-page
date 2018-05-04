@@ -19,6 +19,14 @@ function animateCss(x, animationName, callback) {
 	return x;
 }
 
+/*Certificates*/
+function viewCert(certName) {
+    var child = document.getElementById(certName);
+    var parent = child.parentNode;
+    var index = Array.prototype.indexOf.call(parent.children, child);
+    baguetteBox.show(index, gallery[0]);
+}
+
 function changePageTo(pageName) {
 	oldPage = document.getElementById("page"+curPage);
 	newPage = document.getElementById("page"+pageName);
