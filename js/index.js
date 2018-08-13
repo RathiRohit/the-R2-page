@@ -69,7 +69,13 @@ function changePageTo(pageName) {
 /*Ratings*/
 $(document).ready(function() { getRatings();});
 
-function getRatings() {}
+function getRatings() {
+    $.getJSON( "https://r2-page-scrapper.herokuapp.com/api/get/", function(data) {
+        document.getElementById('codechefRating').innerHTML = data['codechef'];
+        document.getElementById('hackerrankRating').innerHTML = data['hackerrank'];
+        document.getElementById('stackoverflowReputation').innerHTML = data['stackoverflow'];
+    });
+}
 
 /*ubuntu terminal*/
 var globe = this;
