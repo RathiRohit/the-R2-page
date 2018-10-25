@@ -205,3 +205,7 @@ blockquote p {
 	right: 0;
 	z-index: 999999;
 }
+
+.custom-pdf-viewer {
+	height: calc(100% - 3rem);
+}
