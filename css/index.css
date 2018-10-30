@@ -28,6 +28,10 @@
 	margin: 0;
 }
 
+.nomargin {
+	margin: 0;
+}
+
 .row-no-padding > [class*="col-"] {
     padding-left: 0;
     padding-right: 0;
@@ -208,4 +212,37 @@ blockquote p {
 
 .custom-pdf-viewer {
 	height: calc(100% - 3rem);
+}
+
+.slanted-div {
+	left: -10px;
+	height: 100px;
+	width: 110%;
+	-webkit-transform: rotate(-4deg);
+	transform : rotate(-4deg);
+	margin-left: 0;
+	top: -60px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.custom-rounded {
+	border-radius: 1000px;
+}
+
+.experience-logo {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.experience-description {
+	color: #f2f2f2;
+	position: relative;
+	border-left: 2px solid #737373;
+}
+
+.experience-span {
+	position: absolute;
+	bottom: 0;
+	color: #adb3b8;
 }
