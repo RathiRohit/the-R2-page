@@ -5,11 +5,40 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg1512"
    version="1.1"
-   viewBox="0 0 151.32957 58.056591"
-   height="58.056591mm"
-   width="151.32957mm">
+   viewBox="0 0 211.66667 84.666667"
+   height="320"
+   width="800"
+   sodipodi:docname="blockly.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:export-filename="/Users/rohitrathi/Desktop/Personal/R2Page/RathiRohit.github.io/images/logos/technologies/blockly.png"
+   inkscape:export-xdpi="60"
+   inkscape:export-ydpi="60">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="776"
+     id="namedview103"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     units="px"
+     inkscape:zoom="1.18875"
+     inkscape:cx="400"
+     inkscape:cy="100"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1506">
     <clipPath
@@ -17,49 +46,56 @@
        id="clipPath5790">
       <path
          d="M 0,35 H 126 V 0 H 0 Z"
-         id="path5788" />
+         id="path5788"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath5802">
       <path
          d="M 0,35 H 126 V 0 H 0 Z"
-         id="path5800" />
+         id="path5800"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath5812">
       <path
          d="M -1.52588e-4,192 H 192 V -1.83105e-4 H -1.52588e-4 Z"
-         id="path5810" />
+         id="path5810"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath5820">
       <path
          d="M -1.52588e-4,192 H 192 V -1.83105e-4 H -1.52588e-4 Z"
-         id="path5818" />
+         id="path5818"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath5824">
       <path
          d="M 0,192 H 192 V 0 H 0 Z"
-         id="path5822" />
+         id="path5822"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath5828">
       <path
          d="M 0,192 H 192 V 0 H 0 Z"
-         id="path5826" />
+         id="path5826"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath5832">
       <path
          d="M 0,192 H 192 V 0 H 0 Z"
-         id="path5830" />
+         id="path5830"
+         inkscape:connector-curvature="0" />
     </clipPath>
     <linearGradient
        x1="-0.034921873"
@@ -90,10 +126,12 @@
     </linearGradient>
     <path
        d="M 82.97724,29.300104 C 82.790583,28.201973 82.006921,27.299698 80.945743,26.961124 79.884564,26.62255 78.723152,26.904241 77.935,27.691354 L 62.465677,43.197917 50.303229,20.042344 C 49.78815,19.063276 48.772957,18.45025 47.666667,18.45025 c -1.106291,0 -2.121484,0.613026 -2.636563,1.592094 L 38.379115,32.703802 21.695781,1.5864062 C 21.090714,0.45617231 19.83044,-0.16023716 18.566804,0.05600004 17.303168,0.27223724 16.319565,1.2726256 16.12474,2.5397396 L 0,105.76042 43.123438,129.93635 c 2.707936,1.51195 6.006125,1.51195 8.714062,0 l 43.495833,-24.17593 z"
-       id="path-2" />
+       id="path-2"
+       inkscape:connector-curvature="0" />
     <path
        d="m 106.68711,35.274174 c -0.186,-1.097652 -0.96693,-1.999535 -2.02439,-2.337961 -1.05747,-0.338426 -2.21482,-0.05686 -3.00022,0.729912 L 86.247266,49.165925 74.127344,26.020451 C 73.614066,25.04181 72.602423,24.429052 71.5,24.429052 c -1.102423,0 -2.114066,0.612758 -2.627344,1.591399 L 62.244922,38.676387 45.619922,7.5725628 C 45.01697,6.4428218 43.761103,5.8266812 42.501885,6.0428241 41.242667,6.258967 40.262504,7.2589191 40.068359,8.5254804 L 24,111.70114 66.972656,135.86653 c 2.698469,1.51129 5.985125,1.51129 8.683594,0 L 119,111.70114 Z"
-       id="path-4" />
+       id="path-4"
+       inkscape:connector-curvature="0" />
   </defs>
   <metadata
      id="metadata1509">
@@ -108,25 +146,31 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0.60727372,-51.769323)"
+     transform="translate(0.60727372,-25.159246)"
      id="layer1">
-    <path
-       style="fill:#4285f4;stroke-width:0.26458332"
-       d="m 12.604934,61.770873 c -1.774567,-0.0015 -3.2136701,1.43764 -3.2122066,3.212207 v 27.706838 c -0.00146,1.774568 1.4376396,3.213669 3.2122066,3.212205 h 1.25057 c 0.616698,2.31294 2.710855,3.922673 5.104598,3.923792 2.392205,-0.003 4.484163,-1.612336 5.100464,-3.923792 h 1.281058 4.160987 c 1.169002,0 2.116666,-0.947663 2.116666,-2.116666 V 63.88754 l -2.116666,-2.116667 z"
-       id="path906" />
-    <path
-       style="fill:#c8d1db;stroke-width:0.26458332"
-       d="m 28.444794,61.769323 c -0.0028,4.683852 -0.0021,9.366881 -0.0021,14.053406 l -4.400251,-2.48667 c -0.634301,-0.357915 -1.419291,0.09954 -1.420585,0.827856 V 84.91158 c 0.0013,0.728311 0.786285,1.18577 1.420585,0.827855 l 4.400248,-2.487186 v 9.946164 0.587044 2.116666 h 2.116667 0.377238 9.539468 c 1.683266,-6.8e-5 3.047807,-1.364609 3.047876,-3.047875 V 64.808414 c -0.0057,-1.679229 -1.368601,-3.037482 -3.04784,-3.037541 z"
-       id="path908" />
+    <g
+       id="g107"
+       transform="matrix(1.2074898,0,0,1.2074898,4.5453317,-30.069721)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path906"
+         d="m 12.604934,61.770873 c -1.774567,-0.0015 -3.2136701,1.43764 -3.2122066,3.212207 v 27.706838 c -0.00146,1.774568 1.4376396,3.213669 3.2122066,3.212205 h 1.25057 c 0.616698,2.31294 2.710855,3.922673 5.104598,3.923792 2.392205,-0.003 4.484163,-1.612336 5.100464,-3.923792 h 1.281058 4.160987 c 1.169002,0 2.116666,-0.947663 2.116666,-2.116666 V 63.88754 l -2.116666,-2.116667 z"
+         style="fill:#4285f4;stroke-width:0.26458332" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path908"
+         d="m 28.444794,61.769323 c -0.0028,4.683852 -0.0021,9.366881 -0.0021,14.053406 l -4.400251,-2.48667 c -0.634301,-0.357915 -1.419291,0.09954 -1.420585,0.827856 V 84.91158 c 0.0013,0.728311 0.786285,1.18577 1.420585,0.827855 l 4.400248,-2.487186 v 9.946164 0.587044 2.116666 h 2.116667 0.377238 9.539468 c 1.683266,-6.8e-5 3.047807,-1.364609 3.047876,-3.047875 V 64.808414 c -0.0057,-1.679229 -1.368601,-3.037482 -3.04784,-3.037541 z"
+         style="fill:#c8d1db;stroke-width:0.26458332" />
+    </g>
     <text
        id="text5967"
-       y="89.024506"
-       x="54.571331"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       y="78.251266"
+       x="68.423035"
+       style="font-style:normal;font-weight:normal;font-size:8.11862564px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.20296565"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.22222137px;font-family:'Product Sans';-inkscape-font-specification:'Product Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.26458332;"
-         y="89.024506"
-         x="54.571331"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.96940613px;font-family:'.Helvetica LT MM';-inkscape-font-specification:'.Helvetica LT MM';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.20296565"
+         y="78.251266"
+         x="68.423035"
          id="tspan5965">Blockly</tspan></text>
   </g>
 </svg>

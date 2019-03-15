@@ -86,17 +86,17 @@ var terminalShowing = true;
 $(document).ready(function() {
     var ctrlDown = false,
         ctrlKey = 17,
-        cmdKey = 91,
-        cKey = 67;
+        cKey = 67,
+        zKey = 90;
 
     $(document).keydown(function(e) {
-        if (terminalShowing && (e.keyCode==ctrlKey || e.keyCode==cmdKey)) ctrlDown = true;
+        if (terminalShowing && e.keyCode==ctrlKey) ctrlDown = true;
     }).keyup(function(e) {
-        if (terminalShowing && (e.keyCode==ctrlKey || e.keyCode==cmdKey)) ctrlDown = false;
+        if (terminalShowing && e.keyCode==ctrlKey) ctrlDown = false;
     });
 
     $(document).keydown(function(e) {
-        if (ctrlDown && terminalShowing && e.keyCode==cKey)
+        if (ctrlDown && terminalShowing && (e.keyCode==cKey || e.keyCode==zKey))
         {
             window.mobilecheck = function() {
                 var check = false;

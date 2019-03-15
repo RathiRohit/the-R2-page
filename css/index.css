@@ -221,9 +221,22 @@ blockquote p {
 	-webkit-transform: rotate(-4deg);
 	transform : rotate(-4deg);
 	margin-left: 0;
-	top: -60px;
+	top: -160px;
 	position: relative;
 	z-index: 1;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.slanted-div2 {
+	left: -10px;
+	height: 100px;
+	width: 110%;
+	-webkit-transform: rotate(3deg);
+	transform : rotate(3deg);
+	margin-left: 0;
+	top: -40px;
+	position: relative;
+	z-index: 3;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -245,4 +258,30 @@ blockquote p {
 	position: absolute;
 	bottom: 0;
 	color: #adb3b8;
+}
+
+@keyframes underline {
+	from {width: 0%; left: 50%;}
+	to {width: 100%; left: 0%;}
+}
+
+.hover-underline {
+	cursor: pointer;
+	position: relative;
+}
+
+.hover-underline-thoughtworks:hover ::after {
+	content:'';
+	position: absolute;
+	bottom: -50%;
+	border-top: 2px solid #33cccc;
+	animation: underline 0.2s ease-out both;
+}
+
+.hover-underline-iitb:hover ::after {
+	content:'';
+	position: absolute;
+	bottom: -50%;
+	border-top: 2px solid #f5a623;
+	animation: underline 0.2s ease-out both;
 }
