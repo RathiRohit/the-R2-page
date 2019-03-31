@@ -1,20 +1,48 @@
 var curPage = "Dashboard";
+var curDashNavCodeNo = 1;
 
 $(document).on("keydown", function (e) {
-    if ((e.which === 8 && !$(e.target).is("input, textarea")) || (e.which === 27)) {
-        e.preventDefault();
-		if(curPage != "Dashboard")
-			changePageTo("Dashboard");
+  if((e.which === 8 && !$(e.target).is("input, textarea")) || (e.which === 27)) {
+    e.preventDefault();
+    if(curPage != "Dashboard") {
+      changePageTo("Dashboard");
     }
+  }
+  if(curPage === "Dashboard") {
+    switch(e.which) {
+      case 39: //right
+        var newDashNavCodeNo = curDashNavCodeNo + 1;
+        break;
+      case 37: //left
+        var newDashNavCodeNo = curDashNavCodeNo - 1;
+        break;
+      case 40: //down
+        var newDashNavCodeNo = curDashNavCodeNo + 4;
+        break;
+      case 38: //up
+        var newDashNavCodeNo = curDashNavCodeNo - 4;
+        break;
+      case 13: //enter
+      case 32: //space
+        document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]').click();
+        break;
+    }
+    if(0<newDashNavCodeNo && newDashNavCodeNo<9) {
+      curDashNavCodeNo = newDashNavCodeNo
+      navigateNavigatorTo('navigator', document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]'));
+    }
+  }
 });
 
 function animateCss(x, animationName, callback) {
 	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-	$(x).addClass('animated ' + animationName).one(animationEnd, function() {
-		$(x).removeClass('animated ' + animationName);
-		if (callback) {
-		  callback();
-		}
+	$(x).addClass('animated ' + animationName).one(animationEnd, function(event) {
+    if(event.originalEvent.animationName !== "underline") {
+      $(x).removeClass('animated ' + animationName);
+  		if (callback) {
+  		  callback();
+  		}
+    }
 	});
 	return x;
 }
@@ -28,13 +56,17 @@ function viewCert(certName) {
 }
 
 function changePageTo(pageName) {
+  document.getElementById('navigator').style.display = "none";
 	oldPage = document.getElementById("page"+curPage);
 	newPage = document.getElementById("page"+pageName);
 
-	if(pageName != "Dashboard")
+	if(pageName != "Dashboard") {
 		document.getElementById("titleBarHeading").innerHTML = pageName;
-	else
+  }
+	else {
+
 		document.getElementById("titleBarHeading").innerHTML = "The R² Page";
+  }
 
 	animateCss(oldPage, "zoomOut", function(){
 		oldPage.style.display = "none";
@@ -43,8 +75,10 @@ function changePageTo(pageName) {
 			curPage = pageName;
 			if(pageName != "Dashboard")
 				document.getElementById("backArrow").style.display = "block";
-			else
+			else {
+        navigateNavigatorTo('navigator', document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]'));
 				document.getElementById("backArrow").style.display = "none";
+      }
 		});
 	});
 
@@ -113,7 +147,10 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() { changeTerminal(0);});
+$(document).ready(function() {
+  navigateNavigatorTo('navigator', document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]'));
+  changeTerminal(0);
+});
 
 function getRandomInt(min, max) {
   return min+Math.floor(Math.random() * Math.floor(max-min));
@@ -378,6 +415,23 @@ function changeTerminal(step) {
       term.innerHTML = globe.compCom + '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ <span style="font-family:UbuntuTerminalBold; color:#ff0000;">UnsupportedDeviceError: [Error 7] Small screen devices can not handle the awesomness of \'TheR²Page\', please switch to a device with larger screen to enjoy the ride</span><br><br><br>';
       break;
   }
+}
+
+function navigateNavigatorTo(navigatorId, targetElement) {
+  var navigator = document.getElementById(navigatorId);
+  $(navigator).stop(true);
+  navigator.style.display = "none";
+  navigator.style.width = targetElement.offsetWidth+10+"px";
+  navigator.style.height = targetElement.offsetHeight+10+"px";
+  navigator.style.display = "block";
+  navigator.style.left = $(targetElement).offset().left-5 + "px";
+  navigator.style.top = $(targetElement).offset().top-5 + "px";
+  $(navigator).animate({
+    'width': targetElement.offsetWidth+26+"px",
+    'height': targetElement.offsetHeight+26+"px",
+    'left': $(targetElement).offset().left-13+"px",
+    'top': $(targetElement).offset().top-13+"px"
+  }, 'fast');
 }
 
 /*

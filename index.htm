@@ -97,7 +97,7 @@
 					<div class="col-md-12 nopadding">
 						<div class="row col-md-10 offset-md-1">
 							<div class="col-md-3">
-								<div class="col-md-12 custom-palets text-center" onclick="changePageTo('About');">
+								<div data-navCode="dash1" class="col-md-12 custom-palets text-center" onclick="changePageTo('About');">
 									<br>
 									<img class="col-md-12" src="images/icons/about.png" alt="About">
 									<div class="custom-small-top-margin"></div>
@@ -106,7 +106,7 @@
 								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="col-md-12 custom-palets text-center" onclick="changePageTo('Skills');">
+								<div data-navCode="dash2" class="col-md-12 custom-palets text-center" onclick="changePageTo('Skills');">
 									<br>
 									<img class="col-md-12" src="images/icons/skills.png" alt="Skills">
 									<div class="custom-small-top-margin"></div>
@@ -115,7 +115,7 @@
 								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="col-md-12 custom-palets text-center" onclick="changePageTo('Projects');">
+								<div data-navCode="dash3" class="col-md-12 custom-palets text-center" onclick="changePageTo('Projects');">
 									<br>
 									<img class="col-md-12" src="images/icons/projects.png" alt="Projects">
 									<div class="custom-small-top-margin"></div>
@@ -124,7 +124,7 @@
 								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="col-md-12 custom-palets text-center" onclick="changePageTo('Education');">
+								<div data-navCode="dash4" class="col-md-12 custom-palets text-center" onclick="changePageTo('Education');">
 									<br>
 									<img class="col-md-12" src="images/icons/education.png" alt="Education">
 									<div class="custom-small-top-margin"></div>
@@ -136,7 +136,7 @@
 						<br>
 						<div class="row col-md-10 offset-md-1">
 							<div class="col-md-3">
-								<div class="col-md-12 custom-palets text-center" onclick="changePageTo('Achievements');">
+								<div data-navCode="dash5" class="col-md-12 custom-palets text-center" onclick="changePageTo('Achievements');">
 									<br>
 									<img class="col-md-12" src="images/icons/achievements.png" alt="Achievements">
 									<div class="custom-small-top-margin"></div>
@@ -145,7 +145,7 @@
 								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="col-md-12 custom-palets text-center" onclick="changePageTo('Activities');">
+								<div data-navCode="dash6" class="col-md-12 custom-palets text-center" onclick="changePageTo('Activities');">
 									<br>
 									<img class="col-md-12" src="images/icons/activities.png" alt="Activities">
 									<div class="custom-small-top-margin"></div>
@@ -154,7 +154,7 @@
 								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="col-md-12 custom-palets text-center" onclick="changePageTo('Experience');">
+								<div data-navCode="dash7" class="col-md-12 custom-palets text-center" onclick="changePageTo('Experience');">
 									<br>
 									<img class="col-md-12" src="images/icons/experience.png" alt="Experience">
 									<div class="custom-small-top-margin"></div>
@@ -163,7 +163,7 @@
 								</div>
 							</div>
 							<div class="col-md-3">
-								<div class="col-md-12 custom-palets text-center" onclick="changePageTo('Resume');">
+								<div data-navCode="dash8" class="col-md-12 custom-palets text-center" onclick="changePageTo('Resume');">
 									<br>
 									<img class="col-md-12" src="images/icons/resume.png" alt="Resume">
 									<div class="custom-small-top-margin"></div>
@@ -955,6 +955,7 @@
 				<a href="images/certificates/technex18.png" data-caption="SAIT TechNex18 - CodeCrush" id="technex18Cert"></a>
 			</div>
 		</div>
+		<div id="navigator"><div></div></div>
 		<script>
 		var gallery = baguetteBox.run('.gallery', {
 			fullScreen: true
