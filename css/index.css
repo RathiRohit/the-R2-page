@@ -66,11 +66,14 @@
     border-color:#0084FF;
     border-style:solid;
     content: ' ';
+		border-radius: 5px;
+		box-sizing: border-box;
+		opacity: 0.75;
 }
-#navigator:before {box-sizing: border-box; top:0;left:0;border-width: 5px 0 0 5px; border-radius: 5px; border-top-left-radius: 10px;}
-#navigator:after {box-sizing: border-box; top:0;right:0;border-width: 5px 5px 0 0; border-radius: 5px; border-top-right-radius: 10px;}
-#navigator>:first-child:before {box-sizing: border-box; bottom:0;right:0;border-width: 0 5px 5px 0; border-radius: 5px; border-bottom-right-radius: 10px;}
-#navigator>:first-child:after {box-sizing: border-box; bottom:0;left:0;border-width: 0 0 5px 5px; border-radius: 5px; border-bottom-left-radius: 10px;}
+#navigator:before {top:0; left:0; border-width: 5px 0 0 5px; border-top-left-radius: 15px;}
+#navigator:after {top:0; right:0; border-width: 5px 5px 0 0; border-radius: 5px; border-top-right-radius: 15px;}
+#navigator>:first-child:before {bottom:0; right:0; border-width: 0 5px 5px 0; border-bottom-right-radius: 15px;}
+#navigator>:first-child:after {bottom:0; left:0; border-width: 0 0 5px 5px; border-bottom-left-radius: 15px;}
 
 .custom-palets {
 	background-color: #ffffff;

@@ -27,7 +27,7 @@ $(document).on("keydown", function (e) {
         document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]').click();
         break;
     }
-    if(0<newDashNavCodeNo && newDashNavCodeNo<9) {
+    if(0<newDashNavCodeNo && newDashNavCodeNo<10) {
       curDashNavCodeNo = newDashNavCodeNo
       navigateNavigatorTo('navigator', document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]'));
     }
@@ -92,7 +92,7 @@ function changePageTo(pageName) {
         }
         var typed1 = new Typed("#Skills1", options1);
         var options2 = {
-          strings: ["DJango Web Framework &#8226; Bootstrap<br>JavaFX &#8226; Unity3D<hr/>Competitive Coding &#8226; Image Processing<br>Software &amp; Web Development"],
+          strings: ["DJango Web Framework &#8226; Bootstrap<br>React &#8226; Redux &#8226; JavaFX &#8226; Unity3D<hr/>Competitive Coding &#8226; Image Processing<br>Software &amp; Web Development"],
           typeSpeed: 60,
           showCursor: false
         }
@@ -427,10 +427,10 @@ function navigateNavigatorTo(navigatorId, targetElement) {
   navigator.style.left = $(targetElement).offset().left-5 + "px";
   navigator.style.top = $(targetElement).offset().top-5 + "px";
   $(navigator).animate({
-    'width': targetElement.offsetWidth+26+"px",
-    'height': targetElement.offsetHeight+26+"px",
-    'left': $(targetElement).offset().left-13+"px",
-    'top': $(targetElement).offset().top-13+"px"
+    'width': targetElement.offsetWidth+22+"px",
+    'height': targetElement.offsetHeight+22+"px",
+    'left': $(targetElement).offset().left-11+"px",
+    'top': $(targetElement).offset().top-11+"px"
   }, 'fast');
 }
 
