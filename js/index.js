@@ -148,7 +148,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  navigateNavigatorTo('navigator', document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]'));
+  //navigateNavigatorTo('navigator', document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]'));
   changeTerminal(0);
 });
 
