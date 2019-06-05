@@ -301,6 +301,14 @@ blockquote p {
 	animation: underline 0.2s ease-out both;
 }
 
+.hover-underline-thoughtworks-job:hover ::after {
+	content:'';
+	position: absolute;
+	bottom: -50%;
+	border-top: 2px solid #66b561;
+	animation: underline 0.2s ease-out both;
+}
+
 .hover-underline-iitb:hover ::after {
 	content:'';
 	position: absolute;
