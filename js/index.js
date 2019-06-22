@@ -92,7 +92,7 @@ function changePageTo(pageName) {
         }
         var typed1 = new Typed("#Skills1", options1);
         var options2 = {
-          strings: ["DJango Web Framework &#8226; Bootstrap<br>React &#8226; Redux &#8226; JavaFX &#8226; Unity3D<hr/>Competitive Coding &#8226; Image Processing<br>Software &amp; Web Development<hr/>Inkscape &#8226; GIMP<br/><br/>"],
+          strings: ["DJango Web Framework &#8226; NodeJS &#8226; Bootstrap<br>React &#8226; Redux &#8226; JavaFX<hr/>Competitive Coding &#8226; Image Processing<br>Software &amp; Web Development<hr/>Inkscape &#8226; GIMP<br/><br/>"],
           typeSpeed: 60,
           showCursor: false
         }
