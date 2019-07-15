@@ -252,8 +252,9 @@ function changeTerminal(step) {
     case 21:
       var tmp = getRandomInt(0,5);
       var tmpStr = '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ downloading some_awesome_stuff.gzip |';
-      for(i=0;i<=tmp;i++)
-        tmpStr += '&#x25FE;';
+      for(i=0;i<tmp;i++)
+        tmpStr += '=';
+      tmpStr += '>';
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
@@ -263,8 +264,9 @@ function changeTerminal(step) {
     case 22:
       var tmp = getRandomInt(5,10);
       var tmpStr = '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ downloading some_awesome_stuff.gzip |';
-      for(i=0;i<=tmp;i++)
-        tmpStr += '&#x25FE;';
+      for(i=0;i<tmp;i++)
+        tmpStr += '=';
+      tmpStr += '>';
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
@@ -274,8 +276,9 @@ function changeTerminal(step) {
     case 23:
       var tmp = getRandomInt(10,15);
       var tmpStr = '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ downloading some_awesome_stuff.gzip |';
-      for(i=0;i<=tmp;i++)
-        tmpStr += '&#x25FE;';
+      for(i=0;i<tmp;i++)
+        tmpStr += '=';
+      tmpStr += '>';
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
@@ -285,8 +288,9 @@ function changeTerminal(step) {
     case 24:
       var tmp = getRandomInt(15,20);
       var tmpStr = '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ downloading some_awesome_stuff.gzip |';
-      for(i=0;i<=tmp;i++)
-        tmpStr += '&#x25FE;';
+      for(i=0;i<tmp;i++)
+        tmpStr += '=';
+      tmpStr += '>';
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
@@ -296,8 +300,9 @@ function changeTerminal(step) {
     case 25:
       var tmp = 20;
       var tmpStr = '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ downloading some_awesome_stuff.gzip |';
-      for(i=0;i<=tmp;i++)
-        tmpStr += '&#x25FE;';
+      for(i=0;i<tmp;i++)
+        tmpStr += '=';
+      tmpStr += '>';
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
