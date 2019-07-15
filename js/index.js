@@ -149,7 +149,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   //navigateNavigatorTo('navigator', document.querySelector('[data-navCode="dash'+curDashNavCodeNo+'"]'));
-  changeTerminal(0);
+  changeTerminal(8);
 });
 
 function getRandomInt(min, max) {
@@ -195,19 +195,19 @@ function changeTerminal(step) {
       setTimeout(function(){ changeTerminal(step+1) },terminalSpd);
       break;
     case 8:
-      term.innerHTML = globe.compCom + '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ logging in as guest</span>';
+      term.innerHTML = globe.compCom + '<span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ logging in as guest</span>';
       setTimeout(function(){ changeTerminal(step+1) },terminalSpd);
       break;
     case 9:
-      term.innerHTML = globe.compCom + '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ logging in as guest.</span>';
+      term.innerHTML = globe.compCom + '<span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ logging in as guest.</span>';
       setTimeout(function(){ changeTerminal(step+1) },terminalSpd);
       break;
     case 10:
-      term.innerHTML = globe.compCom + '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ logging in as guest..</span>';
+      term.innerHTML = globe.compCom + '<span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ logging in as guest..</span>';
       setTimeout(function(){ changeTerminal(step+1) },terminalSpd);
       break;
     case 11:
-      term.innerHTML = globe.compCom + '<br><span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ logging in as guest...</span>';
+      term.innerHTML = globe.compCom + '<span style="font-family:UbuntuTerminal; color:#ffffff;"><span style="font-family:UbuntuTerminalBold; color:#8ae234;">guest@The-R²-Page</span>:<span style="font-family:UbuntuTerminalBold; color:#729fcf;">~</span>$ logging in as guest...</span>';
       globe.compCom = term.innerHTML;
       setTimeout(function(){ changeTerminal(step+1) },terminalSpd);
       break;
