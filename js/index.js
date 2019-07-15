@@ -255,6 +255,7 @@ function changeTerminal(step) {
       for(i=0;i<tmp;i++)
         tmpStr += '=';
       tmpStr += '>';
+      i++;
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
@@ -267,6 +268,7 @@ function changeTerminal(step) {
       for(i=0;i<tmp;i++)
         tmpStr += '=';
       tmpStr += '>';
+      i++;
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
@@ -279,6 +281,7 @@ function changeTerminal(step) {
       for(i=0;i<tmp;i++)
         tmpStr += '=';
       tmpStr += '>';
+      i++;
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
@@ -291,6 +294,7 @@ function changeTerminal(step) {
       for(i=0;i<tmp;i++)
         tmpStr += '=';
       tmpStr += '>';
+      i++;
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
@@ -303,6 +307,7 @@ function changeTerminal(step) {
       for(i=0;i<tmp;i++)
         tmpStr += '=';
       tmpStr += '>';
+      i++;
       for(;i<=20;i++)
         tmpStr += '-';
       tmpStr += '| ' + tmp*5 + '%</span>';
