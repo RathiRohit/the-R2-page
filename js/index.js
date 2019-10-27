@@ -1,5 +1,38 @@
 var curPage = "Dashboard";
 var curDashNavCodeNo = 1;
+var mX, mY, distance;
+var $holeElement  = $('#hole');
+var $manElement = $('#man');
+
+function scale(num, in_min, in_max, out_min, out_max) {
+  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+function calculateDistance(elem, mouseX, mouseY) {
+  return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
+}
+
+$(document).mousemove(function(e) {
+  mX = e.pageX;
+  mY = e.pageY;
+  distance = calculateDistance($holeElement, mX, mY);
+  holeHeight = $holeElement.height();
+  holeWidth = $holeElement.width();
+  manHeight = $manElement.height();
+  manWidth = $manElement.width();
+  if(distance < 400) {
+    btm = scale(distance, 10, 400, 0, manHeight);
+    $manElement.css({
+      left: ($holeElement.width() - $manElement.width())/2,
+      bottom: btm >= 0 ? btm : 0,
+    });
+  } else {
+    $manElement.css({
+      left: ($holeElement.width() - $manElement.width())/2,
+      bottom: manHeight,
+    });
+  }
+});
 
 $(document).on("keydown", function (e) {
   if((e.which === 8 && !$(e.target).is("input, textarea")) || (e.which === 27)) {
@@ -118,6 +151,9 @@ var compCom = '';
 var terminalShowing = true;
 
 $(document).ready(function() {
+    $holeElement  = $('#hole');
+    $manElement = $('#man');
+
     var ctrlDown = false,
         ctrlKey = 17,
         cKey = 67,
